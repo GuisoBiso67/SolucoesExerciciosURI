@@ -5,8 +5,8 @@ int main(){
     float value;
     int banknotes100=0, banknotes50=0, banknotes20=0, banknotes10=0, banknotes5=0, banknotes2=0;
     int coins1=0, coins0_50=0, coins0_25=0, coins0_10=0, coins0_05=0, coins0_01=0;
-    cin >> value;
-    value += 0.001; // ????? nao tem sentido kkkkkkkkkkk
+    cin >> value; 
+    value += 0.001; // sem somar 0.001, fica faltando 1 moeda de R$ 0.01 em todos os casos, não sei pq
     while(value >=100){
         value -= 100;
         banknotes100 += 1;
